@@ -6,4 +6,4 @@ This is repo created for any utility classes that I will want to reuse.
 
 List.cpp, List.h: These comprises a Linked List Class.
 
-Mergesort.cpp,Mergesort.h: These comprises a MergeSort method using integers.
+mergesort.cpp, mergesort.h: These comprises a MergeSort method using integers.
