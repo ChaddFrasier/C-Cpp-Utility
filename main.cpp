@@ -1,6 +1,21 @@
 #include <iostream>
 #include "List.h"
+#include "mergesort.h"
 
+int main()
+{
+    int arr[6] = {1,35,5,67,8,2};
+    MergeSort sort;
+    int size = sizeof(arr)/sizeof(arr[0]);
+    cout<<size<<"<<SIZE"<<endl;
+    sort.printArr(arr, size);
+    sort.mergesort(arr,0,size-1);
+    cout<<"NEW ARR"<<endl;
+    sort.printArr(arr,size);
+    return 0;
+}
+
+/* MAIN FUNC FOR list.cpp
 int main()
 {
     List nodeList;
@@ -51,3 +66,4 @@ int main()
     }
     return 0;
 }
+*/
