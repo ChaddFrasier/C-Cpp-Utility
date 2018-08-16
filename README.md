@@ -1,6 +1,6 @@
 # Utility
 Author: Chadd Frasier
-Date Last Modified: 8/11/18
+Date Last Modified: 8/15/18
 
 This is repo created for any utility classes that I will want to reuse.
 
