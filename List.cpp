@@ -1,6 +1,3 @@
-#include <cstdlib>
-#include <iostream>
-#include "List.h"
 /*
 *
 * Author: Chadd Frasier
@@ -8,6 +5,9 @@
 *
 * This is a singly-linked list class
 **/
+#include <cstdlib>
+#include <iostream>
+#include "List.h"
 
 List::List()
 {
