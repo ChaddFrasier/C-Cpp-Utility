@@ -3,25 +3,22 @@
     Date: 8/16/18
 
     Basic Quicksort Alg for integers in C
-    */
+*/
 #include "quicksort.h"
-
+/*
+    Quicksort Main Alg.
+    Takes the index given by the partition method and then recursively calls itself on the two halves of the partition.
+*/
 void quicksort(int arr[], int low, int high)
 {
     if (low < high)
     {
-        /* pi is partitioning index, arr[p] is now
-           at right place */
         int pi = Partition(arr, low, high);
-
-        // Separately sort elements before
-        // partition and after partition
         quicksort(arr, low, pi - 1);
         quicksort(arr, pi + 1, high);
     }
 }
-
-/* Partition()
+/* Partition Method
     This method uses the high value as the pivot and then counts to check how many elements in the array are less than or equal to the pivot
     Then sets the location of the pivot based on the count + 1 because we know that is the location of the pivot
     */
@@ -43,14 +40,11 @@ int Partition(int arr[], int low, int high){
     return (i + 1);
 }
 
-
 void swapInt(int* a, int* b){
     int t = *a;
     *a = *b;
     *b = t;
-    //delete t;
 }
-
 
 void printArray(int arr[], int n){
     int i;
@@ -58,3 +52,4 @@ void printArray(int arr[], int n){
         printf("%d ", arr[i]);
     printf("\n");
 }
+
